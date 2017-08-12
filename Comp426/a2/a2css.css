@@ -1,0 +1,47 @@
+		td{
+			width: .75em;
+			height: .75em;
+		}
+		  .p1-okay{
+		  	background-color: purple;
+		  }
+		  .p2-okay{
+		  	background-color:green;
+		  }
+		  .p1-hit{
+		  	background-color:red;
+		  }
+		  .p2-hit{
+		  	background-color:red;
+		  }
+		  .emptySea{
+		  	background-color: blue;
+		  }
+		  .invisibleSea{
+		  	background-color: #00FFFF;
+		  }
+		  .hitSquare{
+		  	background-color:red;
+		  }
+		  .miss{
+		  	background-color: white;
+		  }
+		  .responseDiv{
+		  	height: 725px;
+		  	width: 25%;
+		  	float: right;
+		  	position:relative;
+		  	overflow:auto;
+		  }
+		  .tableDiv{
+		  	width: 75%;
+		  	float: left;
+		  }
+		  #myTable{
+		  	color:red; 
+		  	table-layout: fixed; 
+		  	height:725px;
+		  }
+		  #responseDiv{
+		  	overflow: auto;
+		  }

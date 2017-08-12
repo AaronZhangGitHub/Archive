@@ -1,0 +1,18 @@
+Student:
+	SID: INT, (primary key), student ID
+	First_name: VARCHAR(25), first name
+	last_name: VARCHAR(25), last name
+Professor:
+	PID: INT, (primary key), Professor ID
+	First_name: VARCHAR(25), first name
+	last_name: VARCHAR(25), last name
+Course: 
+	CID: INT, (primary key), course ID
+	course_name: VARCHAR(20), course name example: comp 426
+	semester: CHAR(3), semester that the class is held
+	section_num: INT, the three digit section number of the course
+	exam date: CHAR(10), date of the class exam
+	PID (as foreign key) all except CID would be unique 
+Courses Taken (by a student):
+	SID (references student table)
+	CID (references course table)primary key is combination of CID and SID a student taking the course is okay cause the CID is different

@@ -1,0 +1,12 @@
+12a13,15
+> 
+> Program terminated when maximum step limit -1 reached.
+> 
+12a13,15
+> 
+> Program terminated when maximum step limit -1 reached.
+> 
+12c12
+< 1
+---
+> 0
