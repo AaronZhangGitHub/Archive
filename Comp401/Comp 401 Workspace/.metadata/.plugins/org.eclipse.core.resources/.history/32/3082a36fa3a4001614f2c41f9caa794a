@@ -1,0 +1,173 @@
+package a7;
+
+import com.sun.javaws.exceptions.InvalidArgumentException;
+
+import java.util.*;
+import java.util.concurrent.SynchronousQueue;
+
+/**
+ * Created by Boo Fullwood on 11/5/2016.
+ */
+public class ObservablePictureImpl implements ObservablePicture{
+
+    private Picture source; //Original Object
+    private ArrayList<ObserverImpl> observers; //List of registered observers
+    private ArrayList<ObserverImpl> toBeNotified; //waiting observers
+    private boolean suspended; //Is suspended?
+    private Region changed; //union of all changes
+
+    /*
+     *sets source and default state
+     */
+    public ObservablePictureImpl(Picture p){
+        if(p == null){
+            throw new IllegalArgumentException("nononono");
+        }
+        else {
+            this.source = p;
+            this.suspended = false;
+            observers = new ArrayList<ObserverImpl>();
+            toBeNotified = new ArrayList<ObserverImpl>();
+        }
+
+    }
+
+    /*
+     *registers new observer with associated region r
+     */
+    public void registerROIObserver(ROIObserver observer, Region r){
+        if(observer == null || r == null){
+            throw new IllegalArgumentException("na");
+        }
+        observers.add(new ObserverImpl(observer, r));
+        System.out.println("Observer registered");
+    }
+
+    /*
+     *unregisters all observers with corresponding region r
+     */
+    public void unregisterROIObservers(Region r){
+        if(r == null){
+            throw new IllegalArgumentException("nope");
+        }
+        List<ROIObserver> list = Arrays.asList(this.findROIObservers(r));
+        for(ROIObserver o : list){
+            unregisterROIObserver(o);
+        }
+    }
+
+    /*
+     *unregisters observer r
+     */
+    public void unregisterROIObserver(ROIObserver r){
+        if(r == null){
+            throw new IllegalArgumentException();
+        }
+        Iterator<ObserverImpl> itr = observers.iterator();
+        while (itr.hasNext()){
+            if(itr.next().getObserver() == r){
+                itr.remove();
+            }
+        }
+    }
+
+    /*
+     *returns array of observers with corresponding region r
+     */
+    public ROIObserver[] findROIObservers(Region r){
+        if(r==null){throw new IllegalArgumentException("u messed up");}
+        List<ROIObserver> list = new ArrayList<ROIObserver>();
+        for(ObserverImpl o : observers){
+            try{
+                Region temp = o.getInterest().intersect(r);
+                list.add(o.getObserver());
+                System.out.println("Observer found");
+            }catch (NoIntersectionException e){}
+        }
+        ROIObserver[] ret = list.toArray(new ROIObserver[list.size()]);
+        return ret;
+    }
+
+    //sets suspension state true
+    public void suspendObservable(){
+        this.suspended = true;
+        System.out.println("Suspended");
+    }
+
+    //sets suspension state false and notifies observers
+    public void resumeObservable(){
+        this.suspended = false;
+        System.out.println("Resumed, notifying...");
+        sendNotifications();
+        System.out.println("Finished");
+    }
+
+    public void setPixel(int x, int y, Pixel p){
+        source.setPixel(x,y, p);
+        Coordinate c1 = new Coordinate(x,y);
+        Region currentChange = new RegionImpl(c1,c1);
+        changed = currentChange.union(changed);
+        for(ObserverImpl o : observers){
+                    try{
+                        Region temp = changed.intersect(o.getInterest());
+                        toBeNotified.add(o);
+                        System.out.println("Observer Added");
+                    }catch (NoIntersectionException e){}
+        }
+        if(suspended == false){
+            sendNotifications();
+        }
+    }
+
+    public void setPixel(Coordinate c, Pixel p){
+        int y = c.getY();
+        int x = c.getX();
+        setPixel(x, y, p);
+    }
+
+    public void sendNotifications(){
+        Iterator<ObserverImpl> iter = toBeNotified.iterator();
+        while(iter.hasNext()){
+            ObserverImpl current = iter.next();
+            try {
+                current.getObserver().notify(this, changed.intersect(current.getInterest()));
+                System.out.println("notified");
+                iter.remove();
+                System.out.println("removed");
+            }catch (NoIntersectionException e){System.out.println("Missed Notification");}
+        }
+        this.changed = null;
+    }
+
+
+    //Delegations to Original
+    public int getWidth(){
+       return source.getWidth();
+    }
+
+    public int getHeight(){
+        return source.getHeight();
+    }
+
+    public Pixel getPixel(int x, int y){
+        return source.getPixel(x, y);
+    }
+
+    public Pixel getPixel(Coordinate c){
+        return source.getPixel(c);
+    }
+
+    public SubPicture extract(int xoff, int yoff, int width, int height){
+        return source.extract(xoff, yoff, width, height);
+    }
+
+    public SubPicture extract(Coordinate a, Coordinate b){
+        return source.extract(a,b);
+    }
+
+
+
+
+
+
+}

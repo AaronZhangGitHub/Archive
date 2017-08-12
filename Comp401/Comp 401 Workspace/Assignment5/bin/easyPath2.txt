@@ -1,0 +1,169 @@
+1 = easy
+2 = medium
+3 = hard
+You are in Chapel Hill. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+Day 0: You are 140 miles away from Charlotte.
+Day 1: You are 120 miles away from Charlotte.
+Day 2: You are 100 miles away from Charlotte.
+Day 3: You are 80 miles away from Charlotte.
+Day 4: You are 60 miles away from Charlotte.
+Day 5: You are 40 miles away from Charlotte.
+Day 6: You are 20 miles away from Charlotte.
+You are in Charlotte. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+Day 7: You are 200 miles away from Atlanta.
+Day 8: You are 180 miles away from Atlanta.
+Day 9: You are 160 miles away from Atlanta.
+Day 10: You are 140 miles away from Atlanta.
+Day 11: You are 120 miles away from Atlanta.
+Day 12: You are 100 miles away from Atlanta.
+Day 13: You are 80 miles away from Atlanta.
+Day 14: You are 60 miles away from Atlanta.
+Day 15: You are 40 miles away from Atlanta.
+Day 16: You are 20 miles away from Atlanta.
+You are in Atlanta. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+Day 17: You are 380 miles away from Chapel Hill.
+Day 18: You are 360 miles away from Chapel Hill.
+Day 19: You are 340 miles away from Chapel Hill.
+Day 20: You are 320 miles away from Chapel Hill.
+Day 21: You are 300 miles away from Chapel Hill.
+Day 22: You are 280 miles away from Chapel Hill.
+Day 23: You are 260 miles away from Chapel Hill.
+Day 24: You are 240 miles away from Chapel Hill.
+Day 25: You are 220 miles away from Chapel Hill.
+Day 26: You are 200 miles away from Chapel Hill.
+Day 27: You are 180 miles away from Chapel Hill.
+Day 28: You are 160 miles away from Chapel Hill.
+Day 29: You are 140 miles away from Chapel Hill.
+Day 30: You are 120 miles away from Chapel Hill.
+Day 31: You are 100 miles away from Chapel Hill.
+Day 32: You are 80 miles away from Chapel Hill.
+Day 33: You are 60 miles away from Chapel Hill.
+Day 34: You are 40 miles away from Chapel Hill.
+Day 35: You are 20 miles away from Chapel Hill.
+You are in Chapel Hill. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+Day 36: You are 140 miles away from Charlotte.
+Day 37: You are 120 miles away from Charlotte.
+Day 38: You are 100 miles away from Charlotte.
+Day 39: You are 80 miles away from Charlotte.
+Day 40: You are 60 miles away from Charlotte.
+Day 41: You are 40 miles away from Charlotte.
+Day 42: You are 20 miles away from Charlotte.
+You are in Charlotte. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+Day 43: You are 200 miles away from Atlanta.
+Day 44: You are 180 miles away from Atlanta.
+Day 45: You are 160 miles away from Atlanta.
+Day 46: You are 140 miles away from Atlanta.
+Day 47: You are 120 miles away from Atlanta.
+Day 48: You are 100 miles away from Atlanta.
+Day 49: You are 80 miles away from Atlanta.
+Day 50: You are 60 miles away from Atlanta.
+Day 51: You are 40 miles away from Atlanta.
+Day 52: You are 20 miles away from Atlanta.
+You are in Atlanta. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+Day 53: You are 380 miles away from Chapel Hill.
+Day 54: You are 360 miles away from Chapel Hill.
+Day 55: You are 340 miles away from Chapel Hill.
+Day 56: You are 320 miles away from Chapel Hill.
+Day 57: You are 300 miles away from Chapel Hill.
+Day 58: You are 280 miles away from Chapel Hill.
+Day 59: You are 260 miles away from Chapel Hill.
+Day 60: You are 240 miles away from Chapel Hill.
+Day 61: You are 220 miles away from Chapel Hill.
+Day 62: You are 200 miles away from Chapel Hill.
+Day 63: You are 180 miles away from Chapel Hill.
+Day 64: You are 160 miles away from Chapel Hill.
+Day 65: You are 140 miles away from Chapel Hill.
+Day 66: You are 120 miles away from Chapel Hill.
+Day 67: You are 100 miles away from Chapel Hill.
+Day 68: You are 80 miles away from Chapel Hill.
+Day 69: You are 60 miles away from Chapel Hill.
+Day 70: You are 40 miles away from Chapel Hill.
+Day 71: You are 20 miles away from Chapel Hill.
+You are in Chapel Hill. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+Day 72: You are 140 miles away from Charlotte.
+Day 73: You are 120 miles away from Charlotte.
+Day 74: You are 100 miles away from Charlotte.
+Day 75: You are 80 miles away from Charlotte.
+Day 76: You are 60 miles away from Charlotte.
+Day 77: You are 40 miles away from Charlotte.
+Day 78: You are 20 miles away from Charlotte.
+You are in Charlotte. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+Day 79: You are 200 miles away from Atlanta.
+Day 80: You are 180 miles away from Atlanta.
+Day 81: You are 160 miles away from Atlanta.
+Day 82: You are 140 miles away from Atlanta.
+Day 83: You are 120 miles away from Atlanta.
+Day 84: You are 100 miles away from Atlanta.
+Day 85: You are 80 miles away from Atlanta.
+Day 86: You are 60 miles away from Atlanta.
+Day 87: You are 40 miles away from Atlanta.
+Day 88: You are 20 miles away from Atlanta.
+You are in Atlanta. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+Day 89: You are 639 miles away from Washington, D.C..
+Day 90: You are 619 miles away from Washington, D.C..
+Day 91: You are 599 miles away from Washington, D.C..
+Day 92: You are 579 miles away from Washington, D.C..
+Day 93: You are 559 miles away from Washington, D.C..
+Day 94: You are 539 miles away from Washington, D.C..
+Day 95: You are 519 miles away from Washington, D.C..
+Day 96: You are 499 miles away from Washington, D.C..
+Day 97: You are 479 miles away from Washington, D.C..
+Day 98: You are 459 miles away from Washington, D.C..
+Day 99: You are 439 miles away from Washington, D.C..
+Day 100: You are 419 miles away from Washington, D.C..
+Day 101: You are 399 miles away from Washington, D.C..
+Day 102: You are 379 miles away from Washington, D.C..
+Day 103: You are 359 miles away from Washington, D.C..
+Day 104: You are 339 miles away from Washington, D.C..
+Day 105: You are 319 miles away from Washington, D.C..
+Day 106: You are 299 miles away from Washington, D.C..
+Day 107: You are 279 miles away from Washington, D.C..
+Day 108: You are 259 miles away from Washington, D.C..
+Day 109: You are 239 miles away from Washington, D.C..
+Day 110: You are 219 miles away from Washington, D.C..
+Day 111: You are 199 miles away from Washington, D.C..
+Day 112: You are 179 miles away from Washington, D.C..
+Day 113: You are 159 miles away from Washington, D.C..
+Day 114: You are 139 miles away from Washington, D.C..
+Day 115: You are 119 miles away from Washington, D.C..
+Day 116: You are 99 miles away from Washington, D.C..
+Day 117: You are 79 miles away from Washington, D.C..
+Day 118: You are 59 miles away from Washington, D.C..
+Day 119: You are 39 miles away from Washington, D.C..
+Day 120: You are 19 miles away from Washington, D.C..

@@ -1,0 +1,776 @@
+1 = easy
+2 = medium
+3 = hard
+You are in Chapel Hill. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+5 = New York
+6 = Chicago
+7 = Austin
+8 = Minneapolis
+9 = Seattle
+10 = San Francisco
+11 = Palo Alto
+Day 0: You are 140 miles away from Charlotte.
+Day 1: You are 120 miles away from Charlotte.
+Day 2: You are 100 miles away from Charlotte.
+Day 3: You are 80 miles away from Charlotte.
+Day 4: You are 60 miles away from Charlotte.
+Day 5: You are 40 miles away from Charlotte.
+Day 6: You are 20 miles away from Charlotte.
+You are in Charlotte. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+5 = New York
+6 = Chicago
+7 = Austin
+8 = Minneapolis
+9 = Seattle
+10 = San Francisco
+11 = Palo Alto
+Day 7: You are 200 miles away from Atlanta.
+Day 8: You are 180 miles away from Atlanta.
+Day 9: You are 160 miles away from Atlanta.
+Day 10: You are 140 miles away from Atlanta.
+Day 11: You are 120 miles away from Atlanta.
+Day 12: You are 100 miles away from Atlanta.
+Day 13: You are 80 miles away from Atlanta.
+Day 14: You are 60 miles away from Atlanta.
+Day 15: You are 40 miles away from Atlanta.
+Day 16: You are 20 miles away from Atlanta.
+You are in Atlanta. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+5 = New York
+6 = Chicago
+7 = Austin
+8 = Minneapolis
+9 = Seattle
+10 = San Francisco
+11 = Palo Alto
+Day 17: You are 639 miles away from Washington, D.C..
+Day 18: You are 619 miles away from Washington, D.C..
+Day 19: You are 599 miles away from Washington, D.C..
+Day 20: You are 579 miles away from Washington, D.C..
+Day 21: You are 559 miles away from Washington, D.C..
+Day 22: You are 539 miles away from Washington, D.C..
+Day 23: You are 519 miles away from Washington, D.C..
+Day 24: You are 499 miles away from Washington, D.C..
+Day 25: You are 479 miles away from Washington, D.C..
+Day 26: You are 459 miles away from Washington, D.C..
+Day 27: You are 439 miles away from Washington, D.C..
+Day 28: You are 419 miles away from Washington, D.C..
+Day 29: You are 399 miles away from Washington, D.C..
+Day 30: You are 379 miles away from Washington, D.C..
+Day 31: You are 359 miles away from Washington, D.C..
+Day 32: You are 339 miles away from Washington, D.C..
+Day 33: You are 319 miles away from Washington, D.C..
+Day 34: You are 299 miles away from Washington, D.C..
+Day 35: You are 279 miles away from Washington, D.C..
+Day 36: You are 259 miles away from Washington, D.C..
+Day 37: You are 239 miles away from Washington, D.C..
+Day 38: You are 219 miles away from Washington, D.C..
+Day 39: You are 199 miles away from Washington, D.C..
+Day 40: You are 179 miles away from Washington, D.C..
+Day 41: You are 159 miles away from Washington, D.C..
+Day 42: You are 139 miles away from Washington, D.C..
+Day 43: You are 119 miles away from Washington, D.C..
+Day 44: You are 99 miles away from Washington, D.C..
+Day 45: You are 79 miles away from Washington, D.C..
+Day 46: You are 59 miles away from Washington, D.C..
+Day 47: You are 39 miles away from Washington, D.C..
+Day 48: You are 19 miles away from Washington, D.C..
+You are in Washington, D.C.. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+5 = New York
+6 = Chicago
+7 = Austin
+8 = Minneapolis
+9 = Seattle
+10 = San Francisco
+11 = Palo Alto
+Day 49: You are 225 miles away from New York.
+Day 50: You are 205 miles away from New York.
+Day 51: You are 185 miles away from New York.
+Day 52: You are 165 miles away from New York.
+Day 53: You are 145 miles away from New York.
+Day 54: You are 125 miles away from New York.
+Day 55: You are 105 miles away from New York.
+Day 56: You are 85 miles away from New York.
+Day 57: You are 65 miles away from New York.
+Day 58: You are 45 miles away from New York.
+Day 59: You are 25 miles away from New York.
+Day 60: You are 5 miles away from New York.
+You are in New York. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+5 = New York
+6 = Chicago
+7 = Austin
+8 = Minneapolis
+9 = Seattle
+10 = San Francisco
+11 = Palo Alto
+Day 61: You are 790 miles away from Chicago.
+Day 62: You are 770 miles away from Chicago.
+Day 63: You are 750 miles away from Chicago.
+Day 64: You are 730 miles away from Chicago.
+Day 65: You are 710 miles away from Chicago.
+Day 66: You are 690 miles away from Chicago.
+Day 67: You are 670 miles away from Chicago.
+Day 68: You are 650 miles away from Chicago.
+Day 69: You are 630 miles away from Chicago.
+Day 70: You are 610 miles away from Chicago.
+Day 71: You are 590 miles away from Chicago.
+Day 72: You are 570 miles away from Chicago.
+Day 73: You are 550 miles away from Chicago.
+Day 74: You are 530 miles away from Chicago.
+Day 75: You are 510 miles away from Chicago.
+Day 76: You are 490 miles away from Chicago.
+Day 77: You are 470 miles away from Chicago.
+Day 78: You are 450 miles away from Chicago.
+Day 79: You are 430 miles away from Chicago.
+Day 80: You are 410 miles away from Chicago.
+Day 81: You are 390 miles away from Chicago.
+Day 82: You are 370 miles away from Chicago.
+Day 83: You are 350 miles away from Chicago.
+Day 84: You are 330 miles away from Chicago.
+Day 85: You are 310 miles away from Chicago.
+Day 86: You are 290 miles away from Chicago.
+Day 87: You are 270 miles away from Chicago.
+Day 88: You are 250 miles away from Chicago.
+Day 89: You are 230 miles away from Chicago.
+Day 90: You are 210 miles away from Chicago.
+Day 91: You are 190 miles away from Chicago.
+Day 92: You are 170 miles away from Chicago.
+Day 93: You are 150 miles away from Chicago.
+Day 94: You are 130 miles away from Chicago.
+Day 95: You are 110 miles away from Chicago.
+Day 96: You are 90 miles away from Chicago.
+Day 97: You are 70 miles away from Chicago.
+Day 98: You are 50 miles away from Chicago.
+Day 99: You are 30 miles away from Chicago.
+Day 100: You are 10 miles away from Chicago.
+You are in Chicago. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+5 = New York
+6 = Chicago
+7 = Austin
+8 = Minneapolis
+9 = Seattle
+10 = San Francisco
+11 = Palo Alto
+Day 101: You are 1120 miles away from Austin.
+Day 102: You are 1100 miles away from Austin.
+Day 103: You are 1080 miles away from Austin.
+Day 104: You are 1060 miles away from Austin.
+Day 105: You are 1040 miles away from Austin.
+Day 106: You are 1020 miles away from Austin.
+Day 107: You are 1000 miles away from Austin.
+Day 108: You are 980 miles away from Austin.
+Day 109: You are 960 miles away from Austin.
+Day 110: You are 940 miles away from Austin.
+Day 111: You are 920 miles away from Austin.
+Day 112: You are 900 miles away from Austin.
+Day 113: You are 880 miles away from Austin.
+Day 114: You are 860 miles away from Austin.
+Day 115: You are 840 miles away from Austin.
+Day 116: You are 820 miles away from Austin.
+Day 117: You are 800 miles away from Austin.
+Day 118: You are 780 miles away from Austin.
+Day 119: You are 760 miles away from Austin.
+Day 120: You are 740 miles away from Austin.
+Day 121: You are 720 miles away from Austin.
+Day 122: You are 700 miles away from Austin.
+Day 123: You are 680 miles away from Austin.
+Day 124: You are 660 miles away from Austin.
+Day 125: You are 640 miles away from Austin.
+Day 126: You are 620 miles away from Austin.
+Day 127: You are 600 miles away from Austin.
+Day 128: You are 580 miles away from Austin.
+Day 129: You are 560 miles away from Austin.
+Day 130: You are 540 miles away from Austin.
+Day 131: You are 520 miles away from Austin.
+Day 132: You are 500 miles away from Austin.
+Day 133: You are 480 miles away from Austin.
+Day 134: You are 460 miles away from Austin.
+Day 135: You are 440 miles away from Austin.
+Day 136: You are 420 miles away from Austin.
+Day 137: You are 400 miles away from Austin.
+Day 138: You are 380 miles away from Austin.
+Day 139: You are 360 miles away from Austin.
+Day 140: You are 340 miles away from Austin.
+Day 141: You are 320 miles away from Austin.
+Day 142: You are 300 miles away from Austin.
+Day 143: You are 280 miles away from Austin.
+Day 144: You are 260 miles away from Austin.
+Day 145: You are 240 miles away from Austin.
+Day 146: You are 220 miles away from Austin.
+Day 147: You are 200 miles away from Austin.
+Day 148: You are 180 miles away from Austin.
+Day 149: You are 160 miles away from Austin.
+Day 150: You are 140 miles away from Austin.
+Day 151: You are 120 miles away from Austin.
+Day 152: You are 100 miles away from Austin.
+Day 153: You are 80 miles away from Austin.
+Day 154: You are 60 miles away from Austin.
+Day 155: You are 40 miles away from Austin.
+Day 156: You are 20 miles away from Austin.
+You are in Austin. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+5 = New York
+6 = Chicago
+7 = Austin
+8 = Minneapolis
+9 = Seattle
+10 = San Francisco
+11 = Palo Alto
+Day 157: You are 1173 miles away from Minneapolis.
+Day 158: You are 1153 miles away from Minneapolis.
+Day 159: You are 1133 miles away from Minneapolis.
+Day 160: You are 1113 miles away from Minneapolis.
+Day 161: You are 1093 miles away from Minneapolis.
+Day 162: You are 1073 miles away from Minneapolis.
+Day 163: You are 1053 miles away from Minneapolis.
+Day 164: You are 1033 miles away from Minneapolis.
+Day 165: You are 1013 miles away from Minneapolis.
+Day 166: You are 993 miles away from Minneapolis.
+Day 167: You are 973 miles away from Minneapolis.
+Day 168: You are 953 miles away from Minneapolis.
+Day 169: You are 933 miles away from Minneapolis.
+Day 170: You are 913 miles away from Minneapolis.
+Day 171: You are 893 miles away from Minneapolis.
+Day 172: You are 873 miles away from Minneapolis.
+Day 173: You are 853 miles away from Minneapolis.
+Day 174: You are 833 miles away from Minneapolis.
+Day 175: You are 813 miles away from Minneapolis.
+Day 176: You are 793 miles away from Minneapolis.
+Day 177: You are 773 miles away from Minneapolis.
+Day 178: You are 753 miles away from Minneapolis.
+Day 179: You are 733 miles away from Minneapolis.
+Day 180: You are 713 miles away from Minneapolis.
+Day 181: You are 693 miles away from Minneapolis.
+Day 182: You are 673 miles away from Minneapolis.
+Day 183: You are 653 miles away from Minneapolis.
+Day 184: You are 633 miles away from Minneapolis.
+Day 185: You are 613 miles away from Minneapolis.
+Day 186: You are 593 miles away from Minneapolis.
+Day 187: You are 573 miles away from Minneapolis.
+Day 188: You are 553 miles away from Minneapolis.
+Day 189: You are 533 miles away from Minneapolis.
+Day 190: You are 513 miles away from Minneapolis.
+Day 191: You are 493 miles away from Minneapolis.
+Day 192: You are 473 miles away from Minneapolis.
+Day 193: You are 453 miles away from Minneapolis.
+Day 194: You are 433 miles away from Minneapolis.
+Day 195: You are 413 miles away from Minneapolis.
+Day 196: You are 393 miles away from Minneapolis.
+Day 197: You are 373 miles away from Minneapolis.
+Day 198: You are 353 miles away from Minneapolis.
+Day 199: You are 333 miles away from Minneapolis.
+Day 200: You are 313 miles away from Minneapolis.
+Day 201: You are 293 miles away from Minneapolis.
+Day 202: You are 273 miles away from Minneapolis.
+Day 203: You are 253 miles away from Minneapolis.
+Day 204: You are 233 miles away from Minneapolis.
+Day 205: You are 213 miles away from Minneapolis.
+Day 206: You are 193 miles away from Minneapolis.
+Day 207: You are 173 miles away from Minneapolis.
+Day 208: You are 153 miles away from Minneapolis.
+Day 209: You are 133 miles away from Minneapolis.
+Day 210: You are 113 miles away from Minneapolis.
+Day 211: You are 93 miles away from Minneapolis.
+Day 212: You are 73 miles away from Minneapolis.
+Day 213: You are 53 miles away from Minneapolis.
+Day 214: You are 33 miles away from Minneapolis.
+Day 215: You are 13 miles away from Minneapolis.
+You are in Minneapolis. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+5 = New York
+6 = Chicago
+7 = Austin
+8 = Minneapolis
+9 = Seattle
+10 = San Francisco
+11 = Palo Alto
+Day 216: You are 1656 miles away from Seattle.
+Day 217: You are 1636 miles away from Seattle.
+Day 218: You are 1616 miles away from Seattle.
+Day 219: You are 1596 miles away from Seattle.
+Day 220: You are 1576 miles away from Seattle.
+Day 221: You are 1556 miles away from Seattle.
+Day 222: You are 1536 miles away from Seattle.
+Day 223: You are 1516 miles away from Seattle.
+Day 224: You are 1496 miles away from Seattle.
+Day 225: You are 1476 miles away from Seattle.
+Day 226: You are 1456 miles away from Seattle.
+Day 227: You are 1436 miles away from Seattle.
+Day 228: You are 1416 miles away from Seattle.
+Day 229: You are 1396 miles away from Seattle.
+Day 230: You are 1376 miles away from Seattle.
+Day 231: You are 1356 miles away from Seattle.
+Day 232: You are 1336 miles away from Seattle.
+Day 233: You are 1316 miles away from Seattle.
+Day 234: You are 1296 miles away from Seattle.
+Day 235: You are 1276 miles away from Seattle.
+Day 236: You are 1256 miles away from Seattle.
+Day 237: You are 1236 miles away from Seattle.
+Day 238: You are 1216 miles away from Seattle.
+Day 239: You are 1196 miles away from Seattle.
+Day 240: You are 1176 miles away from Seattle.
+Day 241: You are 1156 miles away from Seattle.
+Day 242: You are 1136 miles away from Seattle.
+Day 243: You are 1116 miles away from Seattle.
+Day 244: You are 1096 miles away from Seattle.
+Day 245: You are 1076 miles away from Seattle.
+Day 246: You are 1056 miles away from Seattle.
+Day 247: You are 1036 miles away from Seattle.
+Day 248: You are 1016 miles away from Seattle.
+Day 249: You are 996 miles away from Seattle.
+Day 250: You are 976 miles away from Seattle.
+Day 251: You are 956 miles away from Seattle.
+Day 252: You are 936 miles away from Seattle.
+Day 253: You are 916 miles away from Seattle.
+Day 254: You are 896 miles away from Seattle.
+Day 255: You are 876 miles away from Seattle.
+Day 256: You are 856 miles away from Seattle.
+Day 257: You are 836 miles away from Seattle.
+Day 258: You are 816 miles away from Seattle.
+Day 259: You are 796 miles away from Seattle.
+Day 260: You are 776 miles away from Seattle.
+Day 261: You are 756 miles away from Seattle.
+Day 262: You are 736 miles away from Seattle.
+Day 263: You are 716 miles away from Seattle.
+Day 264: You are 696 miles away from Seattle.
+Day 265: You are 676 miles away from Seattle.
+Day 266: You are 656 miles away from Seattle.
+Day 267: You are 636 miles away from Seattle.
+Day 268: You are 616 miles away from Seattle.
+Day 269: You are 596 miles away from Seattle.
+Day 270: You are 576 miles away from Seattle.
+Day 271: You are 556 miles away from Seattle.
+Day 272: You are 536 miles away from Seattle.
+Day 273: You are 516 miles away from Seattle.
+Day 274: You are 496 miles away from Seattle.
+Day 275: You are 476 miles away from Seattle.
+Day 276: You are 456 miles away from Seattle.
+Day 277: You are 436 miles away from Seattle.
+Day 278: You are 416 miles away from Seattle.
+Day 279: You are 396 miles away from Seattle.
+Day 280: You are 376 miles away from Seattle.
+Day 281: You are 356 miles away from Seattle.
+Day 282: You are 336 miles away from Seattle.
+Day 283: You are 316 miles away from Seattle.
+Day 284: You are 296 miles away from Seattle.
+Day 285: You are 276 miles away from Seattle.
+Day 286: You are 256 miles away from Seattle.
+Day 287: You are 236 miles away from Seattle.
+Day 288: You are 216 miles away from Seattle.
+Day 289: You are 196 miles away from Seattle.
+Day 290: You are 176 miles away from Seattle.
+Day 291: You are 156 miles away from Seattle.
+Day 292: You are 136 miles away from Seattle.
+Day 293: You are 116 miles away from Seattle.
+Day 294: You are 96 miles away from Seattle.
+Day 295: You are 76 miles away from Seattle.
+Day 296: You are 56 miles away from Seattle.
+Day 297: You are 36 miles away from Seattle.
+Day 298: You are 16 miles away from Seattle.
+You are in Seattle. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+5 = New York
+6 = Chicago
+7 = Austin
+8 = Minneapolis
+9 = Seattle
+10 = San Francisco
+11 = Palo Alto
+Day 299: You are 808 miles away from San Francisco.
+Day 300: You are 788 miles away from San Francisco.
+Day 301: You are 768 miles away from San Francisco.
+Day 302: You are 748 miles away from San Francisco.
+Day 303: You are 728 miles away from San Francisco.
+Day 304: You are 708 miles away from San Francisco.
+Day 305: You are 688 miles away from San Francisco.
+Day 306: You are 668 miles away from San Francisco.
+Day 307: You are 648 miles away from San Francisco.
+Day 308: You are 628 miles away from San Francisco.
+Day 309: You are 608 miles away from San Francisco.
+Day 310: You are 588 miles away from San Francisco.
+Day 311: You are 568 miles away from San Francisco.
+Day 312: You are 548 miles away from San Francisco.
+Day 313: You are 528 miles away from San Francisco.
+Day 314: You are 508 miles away from San Francisco.
+Day 315: You are 488 miles away from San Francisco.
+Day 316: You are 468 miles away from San Francisco.
+Day 317: You are 448 miles away from San Francisco.
+Day 318: You are 428 miles away from San Francisco.
+Day 319: You are 408 miles away from San Francisco.
+Day 320: You are 388 miles away from San Francisco.
+Day 321: You are 368 miles away from San Francisco.
+Day 322: You are 348 miles away from San Francisco.
+Day 323: You are 328 miles away from San Francisco.
+Day 324: You are 308 miles away from San Francisco.
+Day 325: You are 288 miles away from San Francisco.
+Day 326: You are 268 miles away from San Francisco.
+Day 327: You are 248 miles away from San Francisco.
+Day 328: You are 228 miles away from San Francisco.
+Day 329: You are 208 miles away from San Francisco.
+Day 330: You are 188 miles away from San Francisco.
+Day 331: You are 168 miles away from San Francisco.
+Day 332: You are 148 miles away from San Francisco.
+Day 333: You are 128 miles away from San Francisco.
+Day 334: You are 108 miles away from San Francisco.
+Day 335: You are 88 miles away from San Francisco.
+Day 336: You are 68 miles away from San Francisco.
+Day 337: You are 48 miles away from San Francisco.
+Day 338: You are 28 miles away from San Francisco.
+Day 339: You are 8 miles away from San Francisco.
+You are in San Francisco. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+5 = New York
+6 = Chicago
+7 = Austin
+8 = Minneapolis
+9 = Seattle
+10 = San Francisco
+11 = Palo Alto
+Day 340: You are 2813 miles away from Chapel Hill.
+Day 341: You are 2793 miles away from Chapel Hill.
+Day 342: You are 2773 miles away from Chapel Hill.
+Day 343: You are 2753 miles away from Chapel Hill.
+Day 344: You are 2733 miles away from Chapel Hill.
+Day 345: You are 2713 miles away from Chapel Hill.
+Day 346: You are 2693 miles away from Chapel Hill.
+Day 347: You are 2673 miles away from Chapel Hill.
+Day 348: You are 2653 miles away from Chapel Hill.
+Day 349: You are 2633 miles away from Chapel Hill.
+Day 350: You are 2613 miles away from Chapel Hill.
+Day 351: You are 2593 miles away from Chapel Hill.
+Day 352: You are 2573 miles away from Chapel Hill.
+Day 353: You are 2553 miles away from Chapel Hill.
+Day 354: You are 2533 miles away from Chapel Hill.
+Day 355: You are 2513 miles away from Chapel Hill.
+Day 356: You are 2493 miles away from Chapel Hill.
+Day 357: You are 2473 miles away from Chapel Hill.
+Day 358: You are 2453 miles away from Chapel Hill.
+Day 359: You are 2433 miles away from Chapel Hill.
+Day 360: You are 2413 miles away from Chapel Hill.
+Day 361: You are 2393 miles away from Chapel Hill.
+Day 362: You are 2373 miles away from Chapel Hill.
+Day 363: You are 2353 miles away from Chapel Hill.
+Day 364: You are 2333 miles away from Chapel Hill.
+Day 365: You are 2313 miles away from Chapel Hill.
+Day 366: You are 2293 miles away from Chapel Hill.
+Day 367: You are 2273 miles away from Chapel Hill.
+Day 368: You are 2253 miles away from Chapel Hill.
+Day 369: You are 2233 miles away from Chapel Hill.
+Day 370: You are 2213 miles away from Chapel Hill.
+Day 371: You are 2193 miles away from Chapel Hill.
+Day 372: You are 2173 miles away from Chapel Hill.
+Day 373: You are 2153 miles away from Chapel Hill.
+Day 374: You are 2133 miles away from Chapel Hill.
+Day 375: You are 2113 miles away from Chapel Hill.
+Day 376: You are 2093 miles away from Chapel Hill.
+Day 377: You are 2073 miles away from Chapel Hill.
+Day 378: You are 2053 miles away from Chapel Hill.
+Day 379: You are 2033 miles away from Chapel Hill.
+Day 380: You are 2013 miles away from Chapel Hill.
+Day 381: You are 1993 miles away from Chapel Hill.
+Day 382: You are 1973 miles away from Chapel Hill.
+Day 383: You are 1953 miles away from Chapel Hill.
+Day 384: You are 1933 miles away from Chapel Hill.
+Day 385: You are 1913 miles away from Chapel Hill.
+Day 386: You are 1893 miles away from Chapel Hill.
+Day 387: You are 1873 miles away from Chapel Hill.
+Day 388: You are 1853 miles away from Chapel Hill.
+Day 389: You are 1833 miles away from Chapel Hill.
+Day 390: You are 1813 miles away from Chapel Hill.
+Day 391: You are 1793 miles away from Chapel Hill.
+Day 392: You are 1773 miles away from Chapel Hill.
+Day 393: You are 1753 miles away from Chapel Hill.
+Day 394: You are 1733 miles away from Chapel Hill.
+Day 395: You are 1713 miles away from Chapel Hill.
+Day 396: You are 1693 miles away from Chapel Hill.
+Day 397: You are 1673 miles away from Chapel Hill.
+Day 398: You are 1653 miles away from Chapel Hill.
+Day 399: You are 1633 miles away from Chapel Hill.
+Day 400: You are 1613 miles away from Chapel Hill.
+Day 401: You are 1593 miles away from Chapel Hill.
+Day 402: You are 1573 miles away from Chapel Hill.
+Day 403: You are 1553 miles away from Chapel Hill.
+Day 404: You are 1533 miles away from Chapel Hill.
+Day 405: You are 1513 miles away from Chapel Hill.
+Day 406: You are 1493 miles away from Chapel Hill.
+Day 407: You are 1473 miles away from Chapel Hill.
+Day 408: You are 1453 miles away from Chapel Hill.
+Day 409: You are 1433 miles away from Chapel Hill.
+Day 410: You are 1413 miles away from Chapel Hill.
+Day 411: You are 1393 miles away from Chapel Hill.
+Day 412: You are 1373 miles away from Chapel Hill.
+Day 413: You are 1353 miles away from Chapel Hill.
+Day 414: You are 1333 miles away from Chapel Hill.
+Day 415: You are 1313 miles away from Chapel Hill.
+Day 416: You are 1293 miles away from Chapel Hill.
+Day 417: You are 1273 miles away from Chapel Hill.
+Day 418: You are 1253 miles away from Chapel Hill.
+Day 419: You are 1233 miles away from Chapel Hill.
+Day 420: You are 1213 miles away from Chapel Hill.
+Day 421: You are 1193 miles away from Chapel Hill.
+Day 422: You are 1173 miles away from Chapel Hill.
+Day 423: You are 1153 miles away from Chapel Hill.
+Day 424: You are 1133 miles away from Chapel Hill.
+Day 425: You are 1113 miles away from Chapel Hill.
+Day 426: You are 1093 miles away from Chapel Hill.
+Day 427: You are 1073 miles away from Chapel Hill.
+Day 428: You are 1053 miles away from Chapel Hill.
+Day 429: You are 1033 miles away from Chapel Hill.
+Day 430: You are 1013 miles away from Chapel Hill.
+Day 431: You are 993 miles away from Chapel Hill.
+Day 432: You are 973 miles away from Chapel Hill.
+Day 433: You are 953 miles away from Chapel Hill.
+Day 434: You are 933 miles away from Chapel Hill.
+Day 435: You are 913 miles away from Chapel Hill.
+Day 436: You are 893 miles away from Chapel Hill.
+Day 437: You are 873 miles away from Chapel Hill.
+Day 438: You are 853 miles away from Chapel Hill.
+Day 439: You are 833 miles away from Chapel Hill.
+Day 440: You are 813 miles away from Chapel Hill.
+Day 441: You are 793 miles away from Chapel Hill.
+Day 442: You are 773 miles away from Chapel Hill.
+Day 443: You are 753 miles away from Chapel Hill.
+Day 444: You are 733 miles away from Chapel Hill.
+Day 445: You are 713 miles away from Chapel Hill.
+Day 446: You are 693 miles away from Chapel Hill.
+Day 447: You are 673 miles away from Chapel Hill.
+Day 448: You are 653 miles away from Chapel Hill.
+Day 449: You are 633 miles away from Chapel Hill.
+Day 450: You are 613 miles away from Chapel Hill.
+Day 451: You are 593 miles away from Chapel Hill.
+Day 452: You are 573 miles away from Chapel Hill.
+Day 453: You are 553 miles away from Chapel Hill.
+Day 454: You are 533 miles away from Chapel Hill.
+Day 455: You are 513 miles away from Chapel Hill.
+Day 456: You are 493 miles away from Chapel Hill.
+Day 457: You are 473 miles away from Chapel Hill.
+Day 458: You are 453 miles away from Chapel Hill.
+Day 459: You are 433 miles away from Chapel Hill.
+Day 460: You are 413 miles away from Chapel Hill.
+Day 461: You are 393 miles away from Chapel Hill.
+Day 462: You are 373 miles away from Chapel Hill.
+Day 463: You are 353 miles away from Chapel Hill.
+Day 464: You are 333 miles away from Chapel Hill.
+Day 465: You are 313 miles away from Chapel Hill.
+Day 466: You are 293 miles away from Chapel Hill.
+Day 467: You are 273 miles away from Chapel Hill.
+Day 468: You are 253 miles away from Chapel Hill.
+Day 469: You are 233 miles away from Chapel Hill.
+Day 470: You are 213 miles away from Chapel Hill.
+Day 471: You are 193 miles away from Chapel Hill.
+Day 472: You are 173 miles away from Chapel Hill.
+Day 473: You are 153 miles away from Chapel Hill.
+Day 474: You are 133 miles away from Chapel Hill.
+Day 475: You are 113 miles away from Chapel Hill.
+Day 476: You are 93 miles away from Chapel Hill.
+Day 477: You are 73 miles away from Chapel Hill.
+Day 478: You are 53 miles away from Chapel Hill.
+Day 479: You are 33 miles away from Chapel Hill.
+Day 480: You are 13 miles away from Chapel Hill.
+You are in Chapel Hill. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+5 = New York
+6 = Chicago
+7 = Austin
+8 = Minneapolis
+9 = Seattle
+10 = San Francisco
+11 = Palo Alto
+Day 481: You are 784 miles away from Chicago.
+Day 482: You are 764 miles away from Chicago.
+Day 483: You are 744 miles away from Chicago.
+Day 484: You are 724 miles away from Chicago.
+Day 485: You are 704 miles away from Chicago.
+Day 486: You are 684 miles away from Chicago.
+Day 487: You are 664 miles away from Chicago.
+Day 488: You are 644 miles away from Chicago.
+Day 489: You are 624 miles away from Chicago.
+Day 490: You are 604 miles away from Chicago.
+Day 491: You are 584 miles away from Chicago.
+Day 492: You are 564 miles away from Chicago.
+Day 493: You are 544 miles away from Chicago.
+Day 494: You are 524 miles away from Chicago.
+Day 495: You are 504 miles away from Chicago.
+Day 496: You are 484 miles away from Chicago.
+Day 497: You are 464 miles away from Chicago.
+Day 498: You are 444 miles away from Chicago.
+Day 499: You are 424 miles away from Chicago.
+Day 500: You are 404 miles away from Chicago.
+Day 501: You are 384 miles away from Chicago.
+Day 502: You are 364 miles away from Chicago.
+Day 503: You are 344 miles away from Chicago.
+Day 504: You are 324 miles away from Chicago.
+Day 505: You are 304 miles away from Chicago.
+Day 506: You are 284 miles away from Chicago.
+Day 507: You are 264 miles away from Chicago.
+Day 508: You are 244 miles away from Chicago.
+Day 509: You are 224 miles away from Chicago.
+Day 510: You are 204 miles away from Chicago.
+Day 511: You are 184 miles away from Chicago.
+Day 512: You are 164 miles away from Chicago.
+Day 513: You are 144 miles away from Chicago.
+Day 514: You are 124 miles away from Chicago.
+Day 515: You are 104 miles away from Chicago.
+Day 516: You are 84 miles away from Chicago.
+Day 517: You are 64 miles away from Chicago.
+Day 518: You are 44 miles away from Chicago.
+Day 519: You are 24 miles away from Chicago.
+Day 520: You are 4 miles away from Chicago.
+You are in Chicago. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+5 = New York
+6 = Chicago
+7 = Austin
+8 = Minneapolis
+9 = Seattle
+10 = San Francisco
+11 = Palo Alto
+Day 521: You are 2158 miles away from Palo Alto.
+Day 522: You are 2138 miles away from Palo Alto.
+Day 523: You are 2118 miles away from Palo Alto.
+Day 524: You are 2098 miles away from Palo Alto.
+Day 525: You are 2078 miles away from Palo Alto.
+Day 526: You are 2058 miles away from Palo Alto.
+Day 527: You are 2038 miles away from Palo Alto.
+Day 528: You are 2018 miles away from Palo Alto.
+Day 529: You are 1998 miles away from Palo Alto.
+Day 530: You are 1978 miles away from Palo Alto.
+Day 531: You are 1958 miles away from Palo Alto.
+Day 532: You are 1938 miles away from Palo Alto.
+Day 533: You are 1918 miles away from Palo Alto.
+Day 534: You are 1898 miles away from Palo Alto.
+Day 535: You are 1878 miles away from Palo Alto.
+Day 536: You are 1858 miles away from Palo Alto.
+Day 537: You are 1838 miles away from Palo Alto.
+Day 538: You are 1818 miles away from Palo Alto.
+Day 539: You are 1798 miles away from Palo Alto.
+Day 540: You are 1778 miles away from Palo Alto.
+Day 541: You are 1758 miles away from Palo Alto.
+Day 542: You are 1738 miles away from Palo Alto.
+Day 543: You are 1718 miles away from Palo Alto.
+Day 544: You are 1698 miles away from Palo Alto.
+Day 545: You are 1678 miles away from Palo Alto.
+Day 546: You are 1658 miles away from Palo Alto.
+Day 547: You are 1638 miles away from Palo Alto.
+Day 548: You are 1618 miles away from Palo Alto.
+Day 549: You are 1598 miles away from Palo Alto.
+Day 550: You are 1578 miles away from Palo Alto.
+Day 551: You are 1558 miles away from Palo Alto.
+Day 552: You are 1538 miles away from Palo Alto.
+Day 553: You are 1518 miles away from Palo Alto.
+Day 554: You are 1498 miles away from Palo Alto.
+Day 555: You are 1478 miles away from Palo Alto.
+Day 556: You are 1458 miles away from Palo Alto.
+Day 557: You are 1438 miles away from Palo Alto.
+Day 558: You are 1418 miles away from Palo Alto.
+Day 559: You are 1398 miles away from Palo Alto.
+Day 560: You are 1378 miles away from Palo Alto.
+Day 561: You are 1358 miles away from Palo Alto.
+Day 562: You are 1338 miles away from Palo Alto.
+Day 563: You are 1318 miles away from Palo Alto.
+Day 564: You are 1298 miles away from Palo Alto.
+Day 565: You are 1278 miles away from Palo Alto.
+Day 566: You are 1258 miles away from Palo Alto.
+Day 567: You are 1238 miles away from Palo Alto.
+Day 568: You are 1218 miles away from Palo Alto.
+Day 569: You are 1198 miles away from Palo Alto.
+Day 570: You are 1178 miles away from Palo Alto.
+Day 571: You are 1158 miles away from Palo Alto.
+Day 572: You are 1138 miles away from Palo Alto.
+Day 573: You are 1118 miles away from Palo Alto.
+Day 574: You are 1098 miles away from Palo Alto.
+Day 575: You are 1078 miles away from Palo Alto.
+Day 576: You are 1058 miles away from Palo Alto.
+Day 577: You are 1038 miles away from Palo Alto.
+Day 578: You are 1018 miles away from Palo Alto.
+Day 579: You are 998 miles away from Palo Alto.
+Day 580: You are 978 miles away from Palo Alto.
+Day 581: You are 958 miles away from Palo Alto.
+Day 582: You are 938 miles away from Palo Alto.
+Day 583: You are 918 miles away from Palo Alto.
+Day 584: You are 898 miles away from Palo Alto.
+Day 585: You are 878 miles away from Palo Alto.
+Day 586: You are 858 miles away from Palo Alto.
+Day 587: You are 838 miles away from Palo Alto.
+Day 588: You are 818 miles away from Palo Alto.
+Day 589: You are 798 miles away from Palo Alto.
+Day 590: You are 778 miles away from Palo Alto.
+Day 591: You are 758 miles away from Palo Alto.
+Day 592: You are 738 miles away from Palo Alto.
+Day 593: You are 718 miles away from Palo Alto.
+Day 594: You are 698 miles away from Palo Alto.
+Day 595: You are 678 miles away from Palo Alto.
+Day 596: You are 658 miles away from Palo Alto.
+Day 597: You are 638 miles away from Palo Alto.
+Day 598: You are 618 miles away from Palo Alto.
+Day 599: You are 598 miles away from Palo Alto.
+Day 600: You are 578 miles away from Palo Alto.
+Day 601: You are 558 miles away from Palo Alto.
+Day 602: You are 538 miles away from Palo Alto.
+Day 603: You are 518 miles away from Palo Alto.
+Day 604: You are 498 miles away from Palo Alto.
+Day 605: You are 478 miles away from Palo Alto.
+Day 606: You are 458 miles away from Palo Alto.
+Day 607: You are 438 miles away from Palo Alto.
+Day 608: You are 418 miles away from Palo Alto.
+Day 609: You are 398 miles away from Palo Alto.
+Day 610: You are 378 miles away from Palo Alto.
+Day 611: You are 358 miles away from Palo Alto.
+Day 612: You are 338 miles away from Palo Alto.
+Day 613: You are 318 miles away from Palo Alto.
+Day 614: You are 298 miles away from Palo Alto.
+Day 615: You are 278 miles away from Palo Alto.
+Day 616: You are 258 miles away from Palo Alto.
+Day 617: You are 238 miles away from Palo Alto.
+Day 618: You are 218 miles away from Palo Alto.
+Day 619: You are 198 miles away from Palo Alto.
+Day 620: You are 178 miles away from Palo Alto.
+Day 621: You are 158 miles away from Palo Alto.
+Day 622: You are 138 miles away from Palo Alto.
+Day 623: You are 118 miles away from Palo Alto.
+Day 624: You are 98 miles away from Palo Alto.
+Day 625: You are 78 miles away from Palo Alto.
+Day 626: You are 58 miles away from Palo Alto.
+Day 627: You are 38 miles away from Palo Alto.
+Day 628: You are 18 miles away from Palo Alto.

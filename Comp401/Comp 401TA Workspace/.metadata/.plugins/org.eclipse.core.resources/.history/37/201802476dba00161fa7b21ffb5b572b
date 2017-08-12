@@ -1,0 +1,203 @@
+package a8;
+
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSlider;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+
+public class ImageAdjuster extends JPanel implements ChangeListener {
+	
+	private PictureView picture_view;
+	private Picture original_picture;
+	private PictureView blurred_picture_view;
+	private Picture picture;
+	private JPanel slider_panel;
+	private JLabel blur;
+	private JSlider blur_slider;
+	private JLabel saturation;
+	private JSlider saturation_slider;
+	private JLabel brightness;
+	private JSlider brightness_slider;
+	
+	public ImageAdjuster(Picture picture) {
+		setLayout(new BorderLayout());
+		
+		this.picture = picture;
+		picture_view = new PictureView(picture.createObservable());
+		add(picture_view, BorderLayout.CENTER);
+		original_picture = picture_view.getPicture();
+		
+		slider_panel = new JPanel();
+		slider_panel.setLayout(new GridLayout(3,2));
+		
+		blur = new JLabel("Blur: ");
+		slider_panel.add(blur);
+		blur_slider = new JSlider(0,5,0);
+		blur_slider.setMajorTickSpacing(1);
+		blur_slider.setSnapToTicks(true);
+		blur_slider.setPaintTicks(true);
+		blur_slider.setPaintLabels(true);
+		slider_panel.add(blur_slider);
+		
+		saturation = new JLabel("Saturation: ");
+		slider_panel.add(saturation);
+		saturation_slider = new JSlider(-100,100,0);
+		saturation_slider.setMajorTickSpacing(25);
+		saturation_slider.setPaintTicks(true);
+		saturation_slider.setPaintLabels(true);
+		slider_panel.add(saturation_slider);
+	
+		brightness = new JLabel("Brightness: ");
+		slider_panel.add(brightness);
+		brightness_slider = new JSlider(-100,100,0);
+		brightness_slider.setMajorTickSpacing(25);
+		brightness_slider.setPaintTicks(true);
+		brightness_slider.setPaintLabels(true);
+		slider_panel.add(brightness_slider);
+		
+		add(slider_panel, BorderLayout.SOUTH);
+		
+		blur_slider.addChangeListener(this);
+		saturation_slider.addChangeListener(this);
+		brightness_slider.addChangeListener(this);
+		
+	}
+
+	//method to replace each pixel with the average of the pixels around it
+	//blur_val tells you what radius of pixels to blur together
+	public Picture blur(Picture p, int blur_val) {
+		
+		Picture blur = new PictureImpl(p.getWidth(), p.getHeight());
+		for(int i = 0; i < p.getWidth(); i++) {
+			for(int j = 0; j < p.getHeight(); j++) {
+				
+				double red_sum = 0.0;
+				double blue_sum = 0.0;
+				double green_sum = 0.0;
+				int count = 0;
+				
+				//loop through adjacent pixels we have to blur together
+					for(int x = i - blur_val; x <= i + blur_val; x++) { 
+						for(int y = j - blur_val; y <= j + blur_val; y++) {
+							try { //make sure pixel isn't out of bounds
+								Pixel pix = p.getPixel(x,y);
+								red_sum += pix.getRed();
+								blue_sum += pix.getBlue();
+								green_sum += pix.getGreen();
+								count++;	
+							}catch(Exception e) {
+						}
+						}
+					}
+				double new_red = red_sum/count;
+				double new_blue = blue_sum/count;
+				double new_green = green_sum/count;	
+				Pixel blur_pixel = new ColorPixel(new_red, new_green, new_blue);
+				blur.setPixel(i, j, blur_pixel);
+				}
+			}
+		return blur;
+		}
+	
+	//method to adjust pixels towards black or white
+	public Picture brightness(Picture p, double bright_val) {
+		double factor = bright_val/100.0;
+		Pixel White = new GrayPixel(1.0);
+		Pixel Black = new GrayPixel(0.0);
+		Picture bright = new PictureImpl(p.getWidth(), p.getHeight());
+		
+		for(int x = 0; x < p.getWidth(); x++) {
+			for(int y = 0; y < p.getHeight(); y++) {
+				Pixel pix = p.getPixel(x,y);
+				
+				if(bright_val < 0) {//darken pixel aka blend with black pixel
+					Pixel darker_pixel = Black.blend(pix, Math.abs(factor));
+					bright.setPixel(x,y,darker_pixel);
+				}
+				
+				if(bright_val > 0) {//lighten pixel, aka blend with white pixel
+					Pixel brighter_pixel = White.blend(pix, factor);
+					bright.setPixel(x, y, brighter_pixel);
+				}
+				
+				if (bright_val == 0.0) {
+					bright.setPixel(x,y,pix);
+				}
+			}
+		}
+		return bright;
+	}
+	
+	//Method to adjust image toward gray scale or over-saturation given a saturation factor f
+	public Picture saturation(Picture p, int f){
+		Picture saturation_pic = new PictureImpl(p.getWidth(), p.getHeight());
+		Pixel Black = new GrayPixel(0.0);
+		
+		double new_red = 0.0;
+		double new_green = 0.0;
+		double new_blue = 0.0;
+		double a = 0.0;
+		
+		for(int x = 0; x < p.getWidth(); x++) {
+			for(int y = 0; y < p.getHeight(); y++) {
+				Pixel pix = p.getPixel(x,y);
+				if(pix.equals(Black)) {
+					saturation_pic.setPixel(x,y, Black);
+				}else {
+					
+					double b = pix.getIntensity();
+					double old_red = pix.getRed();
+					double old_green = pix.getGreen();
+					double old_blue = pix.getBlue();
+					
+					if (f < 0){ //if saturation factor is negative, use this formula
+						new_red = old_red * (1.0 + (f/100.0)) - (b * f /100.0);
+						new_green = old_green * (1.0 + (f/100.0)) - (b * f /100.0);
+						new_blue = old_blue * (1.0 + (f/100.0)) - (b * f /100.0);
+					}
+					
+					if(f > 0) {// if saturation factor is positive, use this formula
+						//first we have to determine which color component of the pixel is the largest
+						a = (old_red > old_green) ? old_red : old_green;
+						a = (a > old_blue) ? a : old_blue;
+						new_red = old_red * ((a + ((1.0 - a) * (f / 100.0))) / a);
+						new_green = old_green * ((a + ((1.0 - a) * (f / 100.0))) / a);
+						new_blue = old_blue * ((a + ((1.0 - a) * (f / 100.0))) / a);
+					}
+					
+					if(f == 0) {// if saturation factor is 0, stays the same
+						new_red = old_red;
+						new_green = old_green;
+						new_blue = old_blue;
+					}
+					
+				}
+				
+				Pixel new_pix = new ColorPixel(new_red, new_green, new_blue);
+				saturation_pic.setPixel(x, y, new_pix);
+			}
+		}
+		return saturation_pic;
+	}
+	
+	@Override
+	public void stateChanged(ChangeEvent e) {
+		Picture blurredpic = blur(original_picture, blur_slider.getValue());
+		picture_view.setPicture(blurredpic.createObservable());
+		
+		Picture bright_pic = brightness(blurredpic, (double)brightness_slider.getValue());
+		picture_view.setPicture(bright_pic.createObservable());
+		
+		Picture saturation_pic = saturation(bright_pic, saturation_slider.getValue());
+		picture_view.setPicture(saturation_pic.createObservable());
+		
+		
+	}
+		
+
+}
+

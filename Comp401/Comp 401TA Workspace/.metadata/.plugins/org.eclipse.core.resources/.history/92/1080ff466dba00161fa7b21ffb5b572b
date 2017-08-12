@@ -1,0 +1,216 @@
+package a8;
+
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+//
+//NOTE: the keyboard arrows work, but you have to click on the image first for some reason
+//
+
+public class FramePuzzle extends JPanel implements MouseListener, KeyListener {
+	
+	private PictureView blank;
+	private Picture[][] puzzleGrid;
+	private PictureView[][] pictureViewGrid;
+	private JPanel puzzle_panel;
+	private int tile_height;
+	private int tile_width;
+	private int x;
+	private int y;
+	private Picture blank_tile;
+
+	
+	public FramePuzzle(Picture picture) {
+		setLayout(new BorderLayout());
+
+		puzzle_panel = new JPanel();
+		puzzle_panel.setLayout(new GridLayout(5,5));
+		
+		puzzleGrid = new Picture[5][5];
+		tile_width = picture.getWidth()/5;
+		tile_height = picture.getHeight()/5;
+		x = 4;
+		y = 4;
+		
+		for(int i = 0; i < 5; i++) {
+			for(int j = 0; j < 5; j++) {
+			Picture extract = picture.extract(i * tile_width, j * tile_height, tile_width, tile_height);
+			puzzleGrid[j][i] = extract;
+			}
+		}
+		
+		//create the blank tile
+		blank_tile = new PictureImpl(tile_width, tile_height);
+		for(int i = 0; i < tile_width; i++){
+			for(int j = 0; j < tile_height; j++){
+				blank_tile.setPixel(i,j, new ColorPixel(.75,.32,.67));
+			}
+		}
+		
+		blank = new PictureView(blank_tile.createObservable());
+		
+		puzzleGrid[4][4] = blank_tile;
+		
+		pictureViewGrid = new PictureView[5][5];
+		
+		for(int i = 0; i < 5; i++) {
+			for(int j = 0; j < 5; j++) {
+				Picture p = puzzleGrid[i][j];
+				pictureViewGrid[i][j] = new PictureView(p.createObservable());	
+			}
+		}
+		
+		createPicture(pictureViewGrid);
+		addMouseListener(this);
+		addKeyListener(this);
+		add(puzzle_panel, BorderLayout.CENTER);
+		this.addKeyListener(this);
+		this.addMouseListener(this);
+		
+	}
+
+	//helper method to make picture layout after changes
+	private void createPicture(PictureView[][] pics){
+		puzzle_panel.removeAll();
+		System.out.println("HEre");
+		for(PictureView[] picArray : pics) {
+			for(PictureView pic : picArray) {
+				pic.addMouseListener(this);
+				pic.addKeyListener(this);
+				puzzle_panel.add(pic);
+				
+			}
+		}
+	}
+
+	
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		PictureView clicked = (PictureView)e.getSource();
+		int clickedX = 0;
+		int clickedY = 0;
+
+		for(int i = 0; i < 5; i++) {
+			for(int j = 0; j < 5; j++) {
+				if(pictureViewGrid[i][j] == clicked) {
+					clickedX = i;
+					clickedY = j;
+				}
+			}
+		if(clickedX == x || clickedY == y) {
+			
+				//swap left
+				if(clickedX == x - 1 ) { 
+						pictureViewGrid[clickedX + 1][clickedY].setPicture(pictureViewGrid[clickedX][clickedY].getPicture());
+						pictureViewGrid[clickedX][clickedY].setPicture(blank.getPicture());
+						x--;
+						
+				//swap right		
+				} else if (clickedX == x+1){ 
+						pictureViewGrid[clickedX - 1][clickedY].setPicture(pictureViewGrid[clickedX][clickedY].getPicture());
+						pictureViewGrid[clickedX][clickedY].setPicture(blank.getPicture());
+						x++;
+						
+				//swap up
+				} else if(clickedY == y-1) { 
+						pictureViewGrid[clickedX][clickedY+1].setPicture(pictureViewGrid[clickedX][clickedY].getPicture());
+						pictureViewGrid[clickedX][clickedY].setPicture(blank.getPicture());
+						y--;
+						
+				//swap down
+				} else if(clickedY == y+1) { 
+						pictureViewGrid[clickedX][clickedY-1].setPicture(pictureViewGrid[clickedX][clickedY].getPicture());
+						pictureViewGrid[clickedX][clickedY].setPicture(blank.getPicture());
+						y++;
+				}
+			}
+		}
+	} 
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+		int keycode = e.getKeyCode();
+		switch (keycode) {
+		
+		case 37: //I pressed left
+			if(y > 0) {
+				pictureViewGrid[x][y].setPicture(pictureViewGrid[x][y-1].getPicture());
+				pictureViewGrid[x][y-1].setPicture(blank.getPicture());
+				y--;
+			}
+			break;
+			
+		case 39: //I pressed right
+			if (y <= 4) {
+				pictureViewGrid[x][y].setPicture(pictureViewGrid[x][y+1].getPicture());
+				pictureViewGrid[x][y+1].setPicture(blank.getPicture());
+				y++;
+			}
+			break;
+			
+		case 38: // I pressed UP
+			if(x > 0) {
+				pictureViewGrid[x][y].setPicture(pictureViewGrid[x-1][y].getPicture());
+				pictureViewGrid[x-1][y].setPicture(blank.getPicture());
+				x--;
+			}
+			break;
+			
+		case 40: //I pressed down
+			if (x < 4) {
+				pictureViewGrid[x][y].setPicture(pictureViewGrid[x+1][y].getPicture());
+				pictureViewGrid[x+1][y].setPicture(blank.getPicture());
+				x++;
+			}
+			break;
+		}
+		
+		
+	}
+
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+}

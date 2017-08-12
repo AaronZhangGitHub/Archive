@@ -1,0 +1,23 @@
+package a7;
+
+/**
+ * Created by Boo Fullwood on 11/5/2016.
+ */
+public class ObserverImpl {
+    private ROIObserver observer;
+    private Region interest;
+
+    public ObserverImpl(ROIObserver o, Region r){
+        if(o==null || r == null){throw new IllegalArgumentException();}
+        this.observer = o;
+        this.interest = r;
+    }
+
+    public Region getInterest(){
+        return interest;
+    }
+
+    public ROIObserver getObserver(){
+        return observer;
+    }
+}

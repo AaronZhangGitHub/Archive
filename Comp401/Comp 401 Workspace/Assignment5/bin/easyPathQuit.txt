@@ -1,0 +1,35 @@
+1 = easy
+2 = medium
+3 = hard
+You are in Chapel Hill. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+Day 0: You are 140 miles away from Charlotte.
+Day 1: You are 120 miles away from Charlotte.
+Day 2: You are 100 miles away from Charlotte.
+Day 3: You are 80 miles away from Charlotte.
+Day 4: You are 60 miles away from Charlotte.
+Day 5: You are 40 miles away from Charlotte.
+Day 6: You are 20 miles away from Charlotte.
+You are in Charlotte. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.
+Day 7: You are 200 miles away from Atlanta.
+Day 8: You are 180 miles away from Atlanta.
+Day 9: You are 160 miles away from Atlanta.
+Day 10: You are 140 miles away from Atlanta.
+Day 11: You are 120 miles away from Atlanta.
+Day 12: You are 100 miles away from Atlanta.
+Day 13: You are 80 miles away from Atlanta.
+Day 14: You are 60 miles away from Atlanta.
+Day 15: You are 40 miles away from Atlanta.
+Day 16: You are 20 miles away from Atlanta.
+You are in Atlanta. Which city would you like to travel to?
+1 = Chapel Hill
+2 = Charlotte
+3 = Atlanta
+4 = Washington, D.C.

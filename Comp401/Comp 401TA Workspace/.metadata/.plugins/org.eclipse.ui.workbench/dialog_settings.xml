@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="563" key="dialogHeight"/>
+		<item value="900" key="dialogWidth"/>
+		<list key="textEntries">
+			<item value="1"/>
+		</list>
+		<list key="orderedElements">
+			<item value="org.eclipse.ui.console.ConsoleView"/>
+		</list>
+		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
+		</list>
+		<list key="textArray">
+			<item value="console"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.import.ZipFile" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/Users/AaronZhang/Desktop/Assignment8.jar"/>
+			<item value="/Users/AaronZhang/Desktop/A8.jar"/>
+			<item value="/Users/AaronZhang/Desktop/assignment8.jar"/>
+			<item value="/Users/AaronZhang/Desktop/A8(Style-regrade).jar"/>
+			<item value="/Users/AaronZhang/Desktop/assign8.jar"/>
+			<item value="/Users/AaronZhang/Desktop/Assignment8 #10.jar"/>
+			<item value="/Users/AaronZhang/Desktop/a8.jar"/>
+			<item value="/Users/AaronZhang/Desktop/compa8.jar"/>
+			<item value="/Users/AaronZhang/Downloads/a1-solution.zip"/>
+			<item value="/Users/AaronZhang/Desktop/A7-chasejf.jar"/>
+			<item value="/Users/AaronZhang/Desktop/A7-chasejf (1).jar"/>
+			<item value="/Users/AaronZhang/Desktop/Assignment7_1.jar"/>
+			<item value="/Users/AaronZhang/Desktop/A7-6.jar"/>
+			<item value="/Users/AaronZhang/Desktop/Assignment7 (1).jar"/>
+			<item value="/Users/AaronZhang/Desktop/Assignment7(24).jar"/>
+			<item value="/Users/AaronZhang/Desktop/A7.jar"/>
+			<item value="/Users/AaronZhang/Desktop/Project 7.jar"/>
+			<item value="/Users/AaronZhang/Desktop/Assignment 7 Commented.jar"/>
+			<item value="/Users/AaronZhang/Desktop/afatehi_assignment7.jar"/>
+			<item value="/Users/AaronZhang/Desktop/Assignment5.jar"/>
+		</list>
+	</section>
+</section>

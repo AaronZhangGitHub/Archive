@@ -1,0 +1,76 @@
+package a7;
+
+import java.util.IllegalFormatCodePointException;
+
+/**
+ * Created by Boo Fullwood on 11/5/2016.
+ */
+public class RegionImpl implements Region {
+    private Coordinate topLeft;
+    private Coordinate botRight;
+
+    public RegionImpl(Coordinate a, Coordinate b){
+        if(a == null || b == null){throw new IllegalArgumentException("not today");}
+        topLeft = new Coordinate(Math.min(a.getX(), b.getX()),Math.min(a.getY(), b.getY()));
+        botRight = new Coordinate(Math.max(a.getX(), b.getX()),Math.max(a.getY(), b.getY()));
+    }
+
+    public Coordinate getUpperLeft(){
+        return topLeft;
+    }
+
+    public Coordinate getLowerRight(){
+        return botRight;
+    }
+
+    public int getTop(){
+        return topLeft.getY();
+    }
+
+    public int getBottom(){
+        return botRight.getY();
+    }
+
+    public int getLeft(){
+        return topLeft.getX();
+    }
+
+    public int getRight(){
+        return botRight.getX();
+    }
+
+    public Region intersect(Region other) throws NoIntersectionException{
+
+        if(other == null){throw new NoIntersectionException();}
+        else if((((this.getTop() > other.getBottom()) || (this.getBottom() < other.getTop())) ||
+                ((this.getRight() < other.getLeft()) || (this.getLeft() > other.getRight())))){
+            throw new NoIntersectionException();
+        }
+        else{
+            Coordinate c1 = new Coordinate(Math.max(this.getLeft(), other.getLeft()),
+                    Math.max(this.getTop(), other.getTop()));
+            Coordinate c2 = new Coordinate(Math.min(this.getRight(), other.getRight()),
+                    Math.min(this.getBottom(), other.getBottom()));
+
+            Region ret = new RegionImpl(c1, c2);
+            return ret;
+        }
+    }
+
+    public Region union(Region other){
+        if(other == null){
+            return this;
+        }
+        else if(this == null){
+            return other;
+        }
+        else{
+            Coordinate c1 = new Coordinate(Math.min(this.getLeft(), other.getLeft()),
+                    Math.min(this.getTop(), other.getTop()));
+            Coordinate c2 = new Coordinate(Math.max(this.getRight(), other.getRight()),
+                    Math.max(this.getBottom(), other.getBottom()));
+            Region ret = new RegionImpl(c1, c2);
+            return ret;
+        }
+    }
+}

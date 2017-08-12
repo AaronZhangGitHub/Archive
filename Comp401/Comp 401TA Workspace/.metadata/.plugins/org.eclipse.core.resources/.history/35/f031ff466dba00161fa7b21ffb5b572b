@@ -1,0 +1,97 @@
+package a8;
+
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+
+public class PixelInspector extends JPanel implements MouseListener {
+	
+	private PictureView picture_view;
+	private JPanel pic_elements_panel;
+	private JLabel XLabel;
+	private JLabel YLabel;
+	private JLabel Red;
+	private JLabel Green;
+	private JLabel Blue;
+	private JLabel Brightness;
+	
+	public PixelInspector(Picture picture) {
+		setLayout(new BorderLayout());
+		
+		picture_view = new PictureView(picture.createObservable());
+		picture_view.addMouseListener(this);
+		add(picture_view, BorderLayout.CENTER);
+		
+		pic_elements_panel = new JPanel();
+		pic_elements_panel.setLayout(new GridLayout(6,1));
+		
+		XLabel = new JLabel("X: ");
+		YLabel = new JLabel("Y: ");
+		Red = new JLabel("Red: ");
+		Green = new JLabel("Green: ");
+		Blue = new JLabel("Blue: ");
+		Brightness= new JLabel("Brightness: ");
+		
+		pic_elements_panel.add(XLabel);
+		pic_elements_panel.add(YLabel);
+		pic_elements_panel.add(Red);
+		pic_elements_panel.add(Green);
+		pic_elements_panel.add(Blue);
+		pic_elements_panel.add(Brightness);
+		
+		add(pic_elements_panel, BorderLayout.WEST);
+		
+
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		int x = e.getX();
+		int y = e.getY();
+		Pixel p = picture_view.getPicture().getPixel(x,y);
+		double red = p.getRed();
+		XLabel.setText("X: " + x);
+		YLabel.setText("Y: " + y);
+		Red.setText("Red: " + round(red));
+		Green.setText("Green: " + round(p.getGreen()));
+		Blue.setText("Blue: " + round(p.getBlue()));
+		Brightness.setText("Brightness: " + round(p.getIntensity())); 
+	} 
+
+	// helper method to round values
+	public double round(double val) {
+		return Math.round(val*100.0)/100.0;
+	}
+	
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+
+}
